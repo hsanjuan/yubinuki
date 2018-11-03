@@ -1,0 +1,8 @@
+{
+    "NukiBridgeAddr": "<ip>:<port>",
+    "NukiBridgeToken": "<6-chars>",
+    "NukiLockID": "<a number>",
+    "AuthorizedYubikeys": ["<the invariable part of the yubikey One-Time-Password"],
+    "YubicloudClientID": "See https://upgrade.yubico.com/getapikey/",
+    "YubicloudSecretKey": "See https://upgrade.yubico.com/getapikey/"
+}

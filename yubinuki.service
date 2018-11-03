@@ -1,0 +1,21 @@
+# Copy this file to /etc/systemd/system/yubinuki.service:
+#
+# sudo cp yubinuki.service /etc/systemd/system/
+# sudo systemctl daemon-reload
+# sudo systemctl enable yubinuki
+# sudo systemctl start yubinuki
+#
+# This will ensure that yubinuki is always running
+
+
+[Unit]
+Description=YubiNuki
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/yubinuki -config /etc/yubinuki.json
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

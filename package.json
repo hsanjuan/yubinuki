@@ -1,0 +1,30 @@
+{
+  "author": "hsanjuan",
+  "bugs": {
+    "url": "https://github.com/hsanjuan/yubinuki"
+  },
+  "gx": {
+    "dvcsimport": "github.com/hsanjuan/yubinuki"
+  },
+  "gxDependencies": [
+    {
+      "author": "hector",
+      "hash": "QmNNYi7dWEnskmhndxjvWMsUCLHUx2xFemP7k6qUiKwMZo",
+      "name": "go-nfctype4",
+      "version": "0.0.0"
+    },
+    {
+      "author": "hsanjuan",
+      "hash": "QmVoEurXAJ7TYRsEzPD2Pmhf342bVCvaLd6Kesq3AmKQj9",
+      "name": "yubigo",
+      "version": "2018.10.29"
+    }
+  ],
+  "gxVersion": "0.14.0",
+  "language": "go",
+  "license": "MIT",
+  "name": "yubinuki",
+  "releaseCmd": "git commit -a -m \"gx publish $VERSION\"",
+  "version": "0.0.0"
+}
+

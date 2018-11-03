@@ -13,9 +13,9 @@ import (
 	"strings"
 	"time"
 
+	yubigo "github.com/GeertJohan/yubigo"
 	nfctype4 "github.com/hsanjuan/go-nfctype4"
-	"github.com/hsanjuan/go-nfctype4/drivers/libnfc"
-	yubigo "github.com/hsanjuan/yubigo"
+	libnfc "github.com/hsanjuan/go-nfctype4/drivers/libnfc"
 )
 
 var waitNoTargets = 400 * time.Millisecond
@@ -184,6 +184,7 @@ func init() {
 }
 
 func main() {
+	log.Println("Reading Yubinuki configuration from: ", configFlag)
 	f, err := os.Open(configFlag)
 	if err != nil {
 		log.Fatal(err)
