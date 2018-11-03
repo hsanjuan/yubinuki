@@ -1,15 +1,17 @@
 YubiNuki
 ========
 
-This program allows to use NFC-enabled Yubikeys to open Nuki locks.
+[![Build Status](https://travis-ci.org/hsanjuan/yubinuki.svg?branch=master)](https://travis-ci.org/hsanjuan/yubinuki)
+
+This program allows to use NFC Yubikeys to open Nuki smart locks.
 
 Requirements
 ------------
 
 You will need:
 
-* A libnfc-compatible NFC reader and `libnfc-devel` (or equivalent) installed and configured (see `/etc/nfc/libnfc.conf`) in your system (i.e. the [GO2NFC141U from Elechouse](https://www.elechouse.com/elechouse/index.php?main_page=product_info&cPath=90_93&products_id=2253&zenid=ei93tidcjbuo4aj6inm1ahq163)
-* A [Nuki Bridge and Lock](https://nuki.io/de/shop/) and configured API access to it (https://developer.nuki.io/t/bridge-http-api/26)
+* A libnfc-compatible NFC reader and `libnfc-devel` (or equivalent) installed and configured (see `/etc/nfc/libnfc.conf`) in your system (i.e. the [GO2NFC141U from Elechouse](https://www.elechouse.com/elechouse/index.php?main_page=product_info&cPath=90_93&products_id=2253&zenid=ei93tidcjbuo4aj6inm1ahq163))
+* A [Nuki Bridge and Lock](https://nuki.io/de/shop/) and  [API access](https://developer.nuki.io/t/bridge-http-api/26) to it.
 * An [NFC Yubikey](https://www.yubico.com/store/) (currently only tested with the Yubikey NEO)
 * A Yubicloud user ID and Secret (https://upgrade.yubico.com/getapikey/)
 * [`Go` compiler](https://golang.org/dl/)
