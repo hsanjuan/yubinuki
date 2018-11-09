@@ -23,6 +23,7 @@ var waitError = 5 * time.Second
 
 var yubikeyPayloadURLPrefixes = []string{
 	"https://my.yubico.com/neo/",
+	"https://my.yubico.com/yk/#",
 }
 
 // Config sets the necessary parameters to operate the Nuki lock

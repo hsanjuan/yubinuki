@@ -12,7 +12,7 @@ You will need:
 
 * A libnfc-compatible NFC reader and `libnfc-devel` (or equivalent) installed and configured (see `/etc/nfc/libnfc.conf`) in your system (i.e. the [GO2NFC141U from Elechouse](https://www.elechouse.com/elechouse/index.php?main_page=product_info&cPath=90_93&products_id=2253&zenid=ei93tidcjbuo4aj6inm1ahq163))
 * A [Nuki Bridge and Lock](https://nuki.io/de/shop/) and  [API access](https://developer.nuki.io/t/bridge-http-api/26) to it.
-* An [NFC Yubikey](https://www.yubico.com/store/) (currently only tested with the Yubikey NEO)
+* An [NFC Yubikey](https://www.yubico.com/store/) (i.e Yubikey 5 NFC)
 * A Yubicloud user ID and Secret (https://upgrade.yubico.com/getapikey/)
 * [`Go` compiler](https://golang.org/dl/)
 
