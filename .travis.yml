@@ -3,5 +3,12 @@ sudo: required
 go:
 - '1.15.x'
 
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y libnfc-dev
 script:
   - go test -v 
+
+cache:
+  directories:
+    - $GOPATH/src/gx
