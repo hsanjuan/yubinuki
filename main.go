@@ -93,7 +93,7 @@ func (yn *YubiNuki) readToken() (string, error) {
 		return "", errors.New("no ndef records present")
 	}
 
-	url := ndefMessage.Records[0].Payload.String()
+	url := ndefMessage.String()
 	token := parseYubikeyURL(url)
 	if token == "" {
 		return "", errors.New("unknown token url")

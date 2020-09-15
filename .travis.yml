@@ -1,19 +1,7 @@
 language: go
 sudo: required
 go:
-- '1.11.x'
+- '1.15.x'
 
-before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y libnfc-dev
-install:
-  - go get github.com/whyrusleeping/gx
-  - go get github.com/whyrusleeping/gx-go
-  - gx install --global
-  - gx-go rw
 script:
   - go test -v 
-
-cache:
-  directories:
-    - $GOPATH/src/gx
