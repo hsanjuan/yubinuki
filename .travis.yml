@@ -3,12 +3,19 @@ sudo: required
 go:
 - '1.15.x'
 
+env:
+  LIBNFC_VERSION: 1.8.0
+
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y libnfc-dev
+  - sudo apt-get install -y libusb-dev
+  - wget "https://github.com/nfc-tools/libnfc/releases/download/libnfc-${LIBNFC_VERSION}/libnfc-${LIBNFC_VERSION}.tar.bz2"
+  - tar -xf "libnfc-${LIBNFC_VERSION}.tar.bz2"
+  - cd "libnfc-${LIBNFC_VERSION}"
+  - ./configure --prefix=/usr --sysconfdir=/etc
+  - make
+  - sudo make install
+  - cd ..
+  - rm -rf "libnfc-${LIBNFC_VERSION}*"
 script:
   - go test -v 
-
-cache:
-  directories:
-    - $GOPATH/src/gx
